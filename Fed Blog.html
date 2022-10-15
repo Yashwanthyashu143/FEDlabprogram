@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(0, 0, 0);
+}
+body {
+  background-color: rgba(201, 76, 76, 0.3);
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right" style="width:200px;right:0;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <b><p>My Topic</p></b>
+  <p>Mouse Event</p>
+</div>
+
+<div class="w3-main" style="margin-right:200px">
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>MouseEvent</h1>
+  </div>
+</div>
+
+<div class="w3-container">
+    <h1><p><b>Mouse Event Types</p></b></h1>
+    <p>1.onclick event</p>
+    <P>2.onmousedown</P>
+    <P>3.onmouseenter</P>
+    <P>4.ondblclick</P>
+    <P>5.onmouseup</P>
+    
+
+ <h3><p><b>onclick event</p></b></h3>
+  <p>The onclick event generally occurs when the user clicks on an element. It allows the programmer to execute a JavaScript's function when an element gets clicked. This event can be used for validating a form, warning messages and many more.</p>
+
+  <h3><p><b>Using onclick attribute in HTML</p></b></h3>    
+  <p>we are using the HTML onclick attribute and assigning a JavaScript's function to it. When the user clicks the given button, the corresponding function will get executed, and an alert dialog box will be displayed on the screen.</p>
+  <p>program:</p>
+  <p><!DOCTYPE html>  
+    <html>  
+    <head>  
+    <script>  
+    function fun() {  
+    alert("Welcome to the javaTpoint.com");  
+    }  
+    </script>  
+    </head>  
+    <body>  
+    <h3> This is an example of using onclick attribute in HTML. </h3>  
+    <p> Click the following button to see the effect. </p>  
+    <button onclick = "fun()">Click me</button>  
+    </body>  
+    </html>  </p>
+    <h3><p><b>onmousedown Event</p></b></h3>
+    <p>The onmousedown event occurs when a user presses a mouse button over an element.</p>
+
+    <p><!DOCTYPE html>
+      <html>
+      <body>
+      
+      <p>This example demonstrates how to assign an "onmousedown" and "onmouseup" event to a p element.</p>
+      
+      <p id="demo" onmousedown="mouseDown()" onmouseup="mouseUp()">Click me.</p>
+      
+      <script>
+      function mouseDown() {
+        document.getElementById("demo").innerHTML = "The mouse button is held down.";
+      }
+      
+      function mouseUp() {
+        document.getElementById("demo").innerHTML = "You released the mouse button.";
+      }
+      </script>
+      
+      </body>
+      </html>
+      </p>
+      <h3><p><b>onmouseenter Event</p></b></h3>
+      <p>The onmouseenter event occurs when the mouse pointer is moved onto an element.</p>
+      <p><!DOCTYPE html>
+        <html>
+        <body>
+        
+        <p>This example demonstrates how to assign an "onmouseenter" and "onmouseleave" event to a h1 element.</p>
+        
+        <h1 id="demo" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">Mouse over me</h1>
+        
+        <script>
+        function mouseEnter() {
+          document.getElementById("demo").style.color = "red";
+        }
+        
+        function mouseLeave() {
+          document.getElementById("demo").style.color = "black";
+        }
+        </script>
+        
+        </body>
+        </html>
+        </p>
+        <h3><p><b>ondblclick Event</p></b></h3>
+        <p>The ondblclick event occurs when the user double-clicks on an element.</p>
+        <p><!DOCTYPE html>
+          <html>
+          <body>
+          
+          <p>This example demonstrates how to assign an "ondblclick" event to a p element.</p>
+          
+          <p id="demo" ondblclick="myFunction()">Double-click me.</p>
+          
+          <script>
+          function myFunction() {
+            document.getElementById("demo").innerHTML = "I was double-clicked!";
+          }
+          </script>
+          
+          </body>
+          </html>
+          
+          </p>
+          <h3><p><b>onmouseup Event</p></b></h3>
+          <p>The onmouseup event occurs when a user releases a mouse button over an element.</p>
+          <p><!DOCTYPE html>
+            <html>
+            <body>
+            
+            <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+            Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red. The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to green.
+            </p>
+            
+            <script>
+            function mouseDown() {
+              document.getElementById("myP").style.color = "red";
+            }
+            
+            function mouseUp() {
+              document.getElementById("myP").style.color = "green";
+            }
+            </script>
+            <br><br><br><br><br><br><br><br>
+
+            <div>
+                <footer>
+                  
+                  <center><p><b><h1>My Fed Blog </h1> </b></p></center>       
+           <center><p> Page Credits: A.Yashwanth kumar,20BQ1A0502<br/></p></center>
+          <center><p>COPYRIGHT@2021</p></center>
+        </footer>
+            </div>
+
+            
+            </body>
+            
+            </html>
+            </p>
+
+
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+</script>
+</body>
+</html>
+
+
